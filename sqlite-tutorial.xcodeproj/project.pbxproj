@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAEE8E3916844C6D001B5F38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEE8E3816844C6D001B5F38 /* UIKit.framework */; };
+		AAEE8E3B16844C6D001B5F38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEE8E3A16844C6D001B5F38 /* Foundation.framework */; };
+		AAEE8E3D16844C6D001B5F38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEE8E3C16844C6D001B5F38 /* CoreGraphics.framework */; };
+		AAEE8E4316844C6D001B5F38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAEE8E4116844C6D001B5F38 /* InfoPlist.strings */; };
+		AAEE8E4516844C6D001B5F38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEE8E4416844C6D001B5F38 /* main.m */; };
+		AAEE8E4916844C6E001B5F38 /* UONAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEE8E4816844C6E001B5F38 /* UONAppDelegate.m */; };
+		AAEE8E4B16844C6E001B5F38 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AAEE8E4A16844C6E001B5F38 /* Default.png */; };
+		AAEE8E4D16844C6E001B5F38 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAEE8E4C16844C6E001B5F38 /* Default@2x.png */; };
+		AAEE8E4F16844C6E001B5F38 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAEE8E4E16844C6E001B5F38 /* Default-568h@2x.png */; };
+		AAEE8E5216844C6E001B5F38 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAEE8E5016844C6E001B5F38 /* MainStoryboard_iPhone.storyboard */; };
+		AAEE8E5516844C6E001B5F38 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAEE8E5316844C6E001B5F38 /* MainStoryboard_iPad.storyboard */; };
+		AAEE8E5816844C6E001B5F38 /* UONViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEE8E5716844C6E001B5F38 /* UONViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AAEE8E3416844C6D001B5F38 /* sqlite-tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sqlite-tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAEE8E3816844C6D001B5F38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AAEE8E3A16844C6D001B5F38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AAEE8E3C16844C6D001B5F38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AAEE8E4016844C6D001B5F38 /* sqlite-tutorial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sqlite-tutorial-Info.plist"; sourceTree = "<group>"; };
+		AAEE8E4216844C6D001B5F38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AAEE8E4416844C6D001B5F38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AAEE8E4616844C6D001B5F38 /* sqlite-tutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sqlite-tutorial-Prefix.pch"; sourceTree = "<group>"; };
+		AAEE8E4716844C6D001B5F38 /* UONAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UONAppDelegate.h; sourceTree = "<group>"; };
+		AAEE8E4816844C6E001B5F38 /* UONAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UONAppDelegate.m; sourceTree = "<group>"; };
+		AAEE8E4A16844C6E001B5F38 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AAEE8E4C16844C6E001B5F38 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AAEE8E4E16844C6E001B5F38 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AAEE8E5116844C6E001B5F38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		AAEE8E5416844C6E001B5F38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		AAEE8E5616844C6E001B5F38 /* UONViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UONViewController.h; sourceTree = "<group>"; };
+		AAEE8E5716844C6E001B5F38 /* UONViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UONViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAEE8E3116844C6D001B5F38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEE8E3916844C6D001B5F38 /* UIKit.framework in Frameworks */,
+				AAEE8E3B16844C6D001B5F38 /* Foundation.framework in Frameworks */,
+				AAEE8E3D16844C6D001B5F38 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAEE8E2916844C6D001B5F38 = {
+			isa = PBXGroup;
+			children = (
+				AAEE8E3E16844C6D001B5F38 /* sqlite-tutorial */,
+				AAEE8E3716844C6D001B5F38 /* Frameworks */,
+				AAEE8E3516844C6D001B5F38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAEE8E3516844C6D001B5F38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAEE8E3416844C6D001B5F38 /* sqlite-tutorial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAEE8E3716844C6D001B5F38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAEE8E3816844C6D001B5F38 /* UIKit.framework */,
+				AAEE8E3A16844C6D001B5F38 /* Foundation.framework */,
+				AAEE8E3C16844C6D001B5F38 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAEE8E3E16844C6D001B5F38 /* sqlite-tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				AAEE8E4716844C6D001B5F38 /* UONAppDelegate.h */,
+				AAEE8E4816844C6E001B5F38 /* UONAppDelegate.m */,
+				AAEE8E5016844C6E001B5F38 /* MainStoryboard_iPhone.storyboard */,
+				AAEE8E5316844C6E001B5F38 /* MainStoryboard_iPad.storyboard */,
+				AAEE8E5616844C6E001B5F38 /* UONViewController.h */,
+				AAEE8E5716844C6E001B5F38 /* UONViewController.m */,
+				AAEE8E3F16844C6D001B5F38 /* Supporting Files */,
+			);
+			path = "sqlite-tutorial";
+			sourceTree = "<group>";
+		};
+		AAEE8E3F16844C6D001B5F38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAEE8E4016844C6D001B5F38 /* sqlite-tutorial-Info.plist */,
+				AAEE8E4116844C6D001B5F38 /* InfoPlist.strings */,
+				AAEE8E4416844C6D001B5F38 /* main.m */,
+				AAEE8E4616844C6D001B5F38 /* sqlite-tutorial-Prefix.pch */,
+				AAEE8E4A16844C6E001B5F38 /* Default.png */,
+				AAEE8E4C16844C6E001B5F38 /* Default@2x.png */,
+				AAEE8E4E16844C6E001B5F38 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAEE8E3316844C6D001B5F38 /* sqlite-tutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAEE8E5B16844C6E001B5F38 /* Build configuration list for PBXNativeTarget "sqlite-tutorial" */;
+			buildPhases = (
+				AAEE8E3016844C6D001B5F38 /* Sources */,
+				AAEE8E3116844C6D001B5F38 /* Frameworks */,
+				AAEE8E3216844C6D001B5F38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sqlite-tutorial";
+			productName = "sqlite-tutorial";
+			productReference = AAEE8E3416844C6D001B5F38 /* sqlite-tutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAEE8E2B16844C6D001B5F38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = UON;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Shaun Hare";
+			};
+			buildConfigurationList = AAEE8E2E16844C6D001B5F38 /* Build configuration list for PBXProject "sqlite-tutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AAEE8E2916844C6D001B5F38;
+			productRefGroup = AAEE8E3516844C6D001B5F38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAEE8E3316844C6D001B5F38 /* sqlite-tutorial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAEE8E3216844C6D001B5F38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEE8E4316844C6D001B5F38 /* InfoPlist.strings in Resources */,
+				AAEE8E4B16844C6E001B5F38 /* Default.png in Resources */,
+				AAEE8E4D16844C6E001B5F38 /* Default@2x.png in Resources */,
+				AAEE8E4F16844C6E001B5F38 /* Default-568h@2x.png in Resources */,
+				AAEE8E5216844C6E001B5F38 /* MainStoryboard_iPhone.storyboard in Resources */,
+				AAEE8E5516844C6E001B5F38 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAEE8E3016844C6D001B5F38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEE8E4516844C6D001B5F38 /* main.m in Sources */,
+				AAEE8E4916844C6E001B5F38 /* UONAppDelegate.m in Sources */,
+				AAEE8E5816844C6E001B5F38 /* UONViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AAEE8E4116844C6D001B5F38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAEE8E4216844C6D001B5F38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AAEE8E5016844C6E001B5F38 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAEE8E5116844C6E001B5F38 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		AAEE8E5316844C6E001B5F38 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAEE8E5416844C6E001B5F38 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAEE8E5916844C6E001B5F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAEE8E5A16844C6E001B5F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAEE8E5C16844C6E001B5F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sqlite-tutorial/sqlite-tutorial-Prefix.pch";
+				INFOPLIST_FILE = "sqlite-tutorial/sqlite-tutorial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AAEE8E5D16844C6E001B5F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sqlite-tutorial/sqlite-tutorial-Prefix.pch";
+				INFOPLIST_FILE = "sqlite-tutorial/sqlite-tutorial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAEE8E2E16844C6D001B5F38 /* Build configuration list for PBXProject "sqlite-tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEE8E5916844C6E001B5F38 /* Debug */,
+				AAEE8E5A16844C6E001B5F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAEE8E5B16844C6E001B5F38 /* Build configuration list for PBXNativeTarget "sqlite-tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEE8E5C16844C6E001B5F38 /* Debug */,
+				AAEE8E5D16844C6E001B5F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAEE8E2B16844C6D001B5F38 /* Project object */;
+}
