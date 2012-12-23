@@ -20,11 +20,63 @@
 
 -(void) saveData
 {
+    sqlite3_stmt *statement;
+    
+    const char *dbpath =  [databasePath UTF8String];
+    
+    if(sqlite3_open(dbpath,&database) == SQLITE_OK)
+    {
+        NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO SESSIONS (SESSIONTUTOR,SESSIONDATE) VALUES (\"%@\",\"%@\")",sessionTutor.text,sessionDate.text];
+        const char *insert_stmt = [insertSQL UTF8String];
+        sqlite3_prepare(database,insert_stmt,-1, &statement, NULL);
+        if(sqlite3_step(statement) == SQLITE_DONE)
+        {
+            [sessionTutor setText:@" "]; 
+            [sessionDate setText:@""];
+            [sessionStatus setText: @"session added"];
+        }
+        else{
+            sessionStatus.text = @"failed to add session";
+            
+        }
+        sqlite3_finalize(statement);
+        sqlite3_close(database);
+    }
     
 }
 
 -(void) findSession
 {
+    const char *dbpath = [databasePath UTF8String];
+    sqlite3_stmt    *statement;
+    if (sqlite3_open(dbpath, &database) == SQLITE_OK)
+    {
+        NSString *querySQL = [NSString stringWithFormat: @"SELECT SESSIONTUTOR,SESSIONDATE FROM SESSIONS WHERE SESSIONDATE=\"%@\"", sessionDate.text];
+        
+        const char *query_stmt = [querySQL UTF8String];
+        
+        if (sqlite3_prepare_v2(database, query_stmt, -1, &statement, NULL) == SQLITE_OK)
+        {
+            if (sqlite3_step(statement) == SQLITE_ROW)
+            {
+                NSString *session_Date = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 0)];
+                sessionDate.text = session_Date;
+                
+                NSString *session_Tutor = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 1)];
+                sessionTutor.text = session_Tutor;
+                
+                sessionStatus.text = @"Match found";
+                
+                            } else {
+                sessionStatus.text = @"Match not found";
+                sessionTutor.text = @"";
+                sessionDate.text = @"";
+            }
+            sqlite3_finalize(statement);
+        }
+        sqlite3_close(database);
+    }
+    
     
 }
 
@@ -76,6 +128,8 @@
     
     
 }
+
+
 
 
 - (void)didReceiveMemoryWarning
