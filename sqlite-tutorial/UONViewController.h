@@ -7,7 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "/usr/include/sqlite3.h"
 
-@interface UONViewController : UIViewController
+@interface UONViewController : UIViewController{
+
+    sqlite3 *database;
+    UITextField *sessionTutor;
+    UITextField *sessionDate;
+    UILabel *sessionStatus;
+    
+    NSString *databasePath;
+}
+
+@property (strong,nonatomic) IBOutlet UITextField *sessionTutor;
+@property (strong,nonatomic) IBOutlet UITextField *sessionDate;
+@property (strong,nonatomic) IBOutlet UILabel *sessionStatus;
+
+-(IBAction) saveData;
+-(IBAction) findSession;
 
 @end
