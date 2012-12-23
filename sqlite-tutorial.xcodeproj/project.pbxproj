@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA1FB80E1687261300DEAB20 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1FB80D1687261300DEAB20 /* libsqlite3.dylib */; };
+		AA1FB8111687266900DEAB20 /* sessions.db in Resources */ = {isa = PBXBuildFile; fileRef = AA1FB8101687266900DEAB20 /* sessions.db */; };
 		AAEE8E3916844C6D001B5F38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEE8E3816844C6D001B5F38 /* UIKit.framework */; };
 		AAEE8E3B16844C6D001B5F38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEE8E3A16844C6D001B5F38 /* Foundation.framework */; };
 		AAEE8E3D16844C6D001B5F38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEE8E3C16844C6D001B5F38 /* CoreGraphics.framework */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA1FB80D1687261300DEAB20 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		AA1FB8101687266900DEAB20 /* sessions.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = sessions.db; sourceTree = "<group>"; };
 		AAEE8E3416844C6D001B5F38 /* sqlite-tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sqlite-tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEE8E3816844C6D001B5F38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AAEE8E3A16844C6D001B5F38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA1FB80E1687261300DEAB20 /* libsqlite3.dylib in Frameworks */,
 				AAEE8E3916844C6D001B5F38 /* UIKit.framework in Frameworks */,
 				AAEE8E3B16844C6D001B5F38 /* Foundation.framework in Frameworks */,
 				AAEE8E3D16844C6D001B5F38 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +63,7 @@
 		AAEE8E2916844C6D001B5F38 = {
 			isa = PBXGroup;
 			children = (
+				AA1FB80D1687261300DEAB20 /* libsqlite3.dylib */,
 				AAEE8E3E16844C6D001B5F38 /* sqlite-tutorial */,
 				AAEE8E3716844C6D001B5F38 /* Frameworks */,
 				AAEE8E3516844C6D001B5F38 /* Products */,
@@ -91,6 +97,7 @@
 				AAEE8E5316844C6E001B5F38 /* MainStoryboard_iPad.storyboard */,
 				AAEE8E5616844C6E001B5F38 /* UONViewController.h */,
 				AAEE8E5716844C6E001B5F38 /* UONViewController.m */,
+				AA1FB8101687266900DEAB20 /* sessions.db */,
 				AAEE8E3F16844C6D001B5F38 /* Supporting Files */,
 			);
 			path = "sqlite-tutorial";
@@ -168,6 +175,7 @@
 				AAEE8E4F16844C6E001B5F38 /* Default-568h@2x.png in Resources */,
 				AAEE8E5216844C6E001B5F38 /* MainStoryboard_iPhone.storyboard in Resources */,
 				AAEE8E5516844C6E001B5F38 /* MainStoryboard_iPad.storyboard in Resources */,
+				AA1FB8111687266900DEAB20 /* sessions.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +315,7 @@
 				AAEE8E5D16844C6E001B5F38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

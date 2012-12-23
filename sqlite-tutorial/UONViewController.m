@@ -36,9 +36,11 @@
     NSString* docsDir;
     NSArray* dirPaths;
     
-    dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask,
+    dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,
                                                    YES);
     docsDir = [dirPaths objectAtIndex:0];
+    
+    NSLog(@"%@",docsDir); 
     
     databasePath = [[NSString alloc] initWithString:[docsDir stringByAppendingPathComponent:@"sessions.db"]];
     
